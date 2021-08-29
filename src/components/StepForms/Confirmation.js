@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-const Confirmation = () => {
+const Confirmation = ({formData}) => {
     return (
         <div>
-            Confirmation
+            {formData}
         </div>
     )
 }

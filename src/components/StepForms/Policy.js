@@ -4,9 +4,7 @@ import { useForm, FormProvider } from 'react-hook-form';
 
 import FormInput from './CustomTextField';
 
-const General = ({ next,formData,setFormData }) => {
-
-    const {title} = formData;
+const Policy = ({ next }) => {
 
     const methods = useForm();
 
@@ -15,9 +13,8 @@ const General = ({ next,formData,setFormData }) => {
             <FormProvider {...methods}>
             <form onSubmit={methods.handleSubmit((data) => next({ ...data }))}>
                     <Grid container spacing={3}>
-                        <input type="text" name="title" />
-                        {/* <FormInput name='title' label='Title' />
-                        <FormInput name='price' label='Price' /> */}
+                        <FormInput name='policy' label='Ploicy' />
+                        <FormInput name='description' label='Description' />
                         {/* <FormInput name='address1' label='Address' />
                         <FormInput name='email' label='Email' />
                         <FormInput name='city' label='City' />
@@ -61,4 +58,4 @@ const General = ({ next,formData,setFormData }) => {
     )
 }
 
-export default General;
+export default Policy;

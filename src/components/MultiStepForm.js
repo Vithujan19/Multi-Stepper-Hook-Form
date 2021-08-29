@@ -3,7 +3,7 @@ import { Paper, Stepper, Step, StepLabel, Typography, CircularProgress, Divider,
 import useStyle from './styles';
 import General from './StepForms/General';
 import SubCategory from './StepForms/SubCategory';
-import Policy from './StepForms/policy';
+import Policy from './StepForms/Policy';
 import Confirmation from './StepForms/Confirmation';
 
 // const initialState = {
@@ -45,10 +45,10 @@ const MultiStepForm = () => {
     }
 
     const Form = () => activeStep === 0
-        ? <General next={next} />
+        ? <General next={next} formData={formData} setFormData={setFormData}/>
         : activeStep === 1 ? <SubCategory next={next} />
-            : activeStep === 2 ? <Policy />
-                : <Confirmation />
+            : activeStep === 2 ? <Policy next={next} />
+                : <Confirmation formData={formData}/>
     // {
     //     switch (activeStep) {
     //         case 0:
