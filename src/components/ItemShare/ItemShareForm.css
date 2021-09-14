@@ -1,0 +1,60 @@
+/* .upload{
+    padding: 50px;
+}
+.create_product{
+    padding-top: 60px;
+}
+.create_product .item_form .row{
+    width: 100%;
+    margin: 15px 0;
+}
+.create_product .item_form .item_input{
+    width: 100%;
+    min-height: 40px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.create_product .item_form .feature_input{
+    width: 50%;
+    min-height: 30px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.add_input{
+    width: 100%;
+    min-height: 30px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.create_product .item_form .item_btn{
+    width: 200px;
+    height: 40px;
+    background: rgb(192, 15, 15);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+} */
+
+.inputCls {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+.inputCls:focus {
+    border: 1px solid rgb(57, 146, 219);
+  }
+  
+select{
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
